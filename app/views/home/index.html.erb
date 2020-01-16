@@ -1,5 +1,5 @@
 <div class="jumbotron jumbotron-fluid center">
-    <div class="container">
+    <div class="ccontainer-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="display-4">Welcome to My Pinterested App</h1>
@@ -9,8 +9,8 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <%= link_to 'Log In', root_path, class: 'btn btn-dark' %>
-                <%= link_to 'Register', root_path, class: 'btn btn-primary' %>
+                <%= link_to 'Log In', new_user_session_path, class: 'btn btn-dark' %>
+                <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary' %>
             </div>
         </div>
 
