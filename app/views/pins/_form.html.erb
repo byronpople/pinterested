@@ -10,13 +10,14 @@
       </ul>
     </div>
   <% end %>
+  <div class="container">
+    <div class="field form-group">
+      <%= form.label :description %>
+      <%= form.text_field :description, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+      <%= form.submit "Submit", class: "btn btn-primary"%>
+    </div>
   </div>
 <% end %>
