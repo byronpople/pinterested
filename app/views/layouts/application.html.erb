@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pinterested</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterested</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-  <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-<body>
-  <%= render 'home/header' %>
-  <div class="body-structure">
-    <% flash.each do |name, msg| %>
-      <%= content_tag(:div, msg, class: "alert alert-info") %>
-    <% end %>
-    <div class="waiting">
-      <%= yield %>
+  <body>
+    <%= render 'home/header' %>
+    <div class="body-structure">
+      <% flash.each do |name, msg| %>
+        <%= content_tag(:div, msg, class: "alert alert-info") %>
+      <% end %>
+      <div class="waiting">
+        <%= yield %>
+      </div>
     </div>
-  </div>
-  <%= render 'home/footer' %>
-</body>
+    <%= render 'home/footer' %>
+  </body>
 
 </html>
