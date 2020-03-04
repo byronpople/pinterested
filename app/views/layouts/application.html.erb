@@ -13,12 +13,10 @@
 
   <body>
     <%= render 'home/header' %>
-    <div class="body-structure">
-      <% flash.each do |name, msg| %>
-        <%= content_tag(:div, msg, class: "alert notice alert-info") %>
-      <% end %>
-      <%= yield %>
-    </div>
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert notice alert-info") %>
+    <% end %>
+    <%= yield %>
     <%= render 'home/footer' %>
   </body>
 
