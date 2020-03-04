@@ -15,11 +15,9 @@
     <%= render 'home/header' %>
     <div class="body-structure">
       <% flash.each do |name, msg| %>
-        <%= content_tag(:div, msg, class: "alert alert-info") %>
+        <%= content_tag(:div, msg, class: "alert notice alert-info") %>
       <% end %>
-      <div class="waiting">
-        <%= yield %>
-      </div>
+      <%= yield %>
     </div>
     <%= render 'home/footer' %>
   </body>

@@ -229,7 +229,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.4, >= 3.4.1)
   byebug
   capybara (>= 2.15)
-  devise (~> 4.7, >= 4.7.1)
+  devise (~> 4.2)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   pg
@@ -251,4 +251,4 @@ RUBY VERSION
    ruby 2.6.3p62
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
